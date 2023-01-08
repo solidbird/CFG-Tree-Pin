@@ -1,7 +1,6 @@
 # CFG Tree Pin
 
-I am currently trying to build a CFG Tree with Pin just to get familiar with programming again and learning
-about the Pin Instrumentation Tool. 
+This tool is walking through an CFG Tree Path with Pin Instrumentation Tool. Maybe I will use this part as a feature in another software project.
 
 Usage (Make sure to change the path of your pin framework in the "pintool.sh" file):
 ```
