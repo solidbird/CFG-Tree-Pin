@@ -1,0 +1,677 @@
+-- Program Start --
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e00990770 ---
+.text
+	 IP: 557e00990770 IP+1: 557e00990774
+		 << nop edx, edi
+	 IP: 557e00990774 IP+1: 557e00990776
+		 << xor ebp, ebp
+	 IP: 557e00990776 IP+1: 557e00990779
+		 << mov r9, rdx
+	 IP: 557e00990779 IP+1: 557e0099077a
+		 << pop rsi
+	 IP: 557e0099077a IP+1: 557e0099077d
+		 << mov rdx, rsp
+	 IP: 557e0099077d IP+1: 557e00990781
+		 << and rsp, 0xfffffffffffffff0
+	 IP: 557e00990781 IP+1: 557e00990782
+		 << push rax
+	 IP: 557e00990782 IP+1: 557e00990783
+		 << push rsp
+	 IP: 557e00990783 IP+1: 557e00990786
+		 << xor r8d, r8d
+	 IP: 557e00990786 IP+1: 557e00990788
+		 << xor ecx, ecx
+	 IP: 557e00990788 IP+1: 557e0099078f
+		 << lea rdi, ptr [rip-0x19f]
+	 IP: 557e0099078f IP+1: 557e00990795
+		 << call qword ptr [rip+0x8823]
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e00990000 ---
+_init
+	 IP: 557e00990000 IP+1: 557e00990004
+		 << nop edx, edi
+	 IP: 557e00990004 IP+1: 557e00990008
+		 << sub rsp, 0x8
+	 IP: 557e00990008 IP+1: 557e0099000f
+		 << mov rax, qword ptr [rip+0x8fc1]
+	 IP: 557e0099000f IP+1: 557e00990012
+		 << test rax, rax
+	 IP: 557e00990012 IP+1: 557e00990014
+		 << jz 0x557e00990016
+	|
+	|
+	false: jz 0x557e00990016
+	|
+	v
+--- BBL Head Address: 557e00990014 ---
+_init
+	 IP: 557e00990014 IP+1: 557e00990016
+		 << call rax
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e00990016 ---
+_init
+	 IP: 557e00990016 IP+1: 557e0099001b
+		 << call 0x557e009908a0
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e009908a0 ---
+.text
+	 IP: 557e009908a0 IP+1: 557e009908a4
+		 << nop edx, edi
+	 IP: 557e009908a4 IP+1: 557e009908a9
+		 << jmp 0x557e009907d0
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e009907d0 ---
+.text
+	 IP: 557e009907d0 IP+1: 557e009907d7
+		 << lea rdi, ptr [rip+0x88c1]
+	 IP: 557e009907d7 IP+1: 557e009907de
+		 << lea rsi, ptr [rip+0x88ba]
+	 IP: 557e009907de IP+1: 557e009907e1
+		 << sub rsi, rdi
+	 IP: 557e009907e1 IP+1: 557e009907e4
+		 << mov rax, rsi
+	 IP: 557e009907e4 IP+1: 557e009907e8
+		 << shr rsi, 0x3f
+	 IP: 557e009907e8 IP+1: 557e009907ec
+		 << sar rax, 0x3
+	 IP: 557e009907ec IP+1: 557e009907ef
+		 << add rsi, rax
+	 IP: 557e009907ef IP+1: 557e009907f2
+		 << sar rsi, 0x1
+	 IP: 557e009907f2 IP+1: 557e009907f4
+		 << jz 0x557e00990808
+	|
+	|
+	false: jz 0x557e00990808
+	|
+	v
+--- BBL Head Address: 557e009907f4 ---
+.text
+	 IP: 557e009907f4 IP+1: 557e009907fb
+		 << mov rax, qword ptr [rip+0x87e5]
+	 IP: 557e009907fb IP+1: 557e009907fe
+		 << test rax, rax
+	 IP: 557e009907fe IP+1: 557e00990800
+		 << jz 0x557e00990808
+	|
+	|
+	false: jz 0x557e00990808
+	|
+	v
+--- BBL Head Address: 557e00990800 ---
+.text
+	 IP: 557e00990800 IP+1: 557e00990802
+		 << jmp rax
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e00990808 ---
+.text
+	 IP: 557e00990808 IP+1: 557e00990809
+		 << ret 
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e0099001b ---
+_init
+	 IP: 557e0099001b IP+1: 557e00990020
+		 << call 0x557e00995f00
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e00995f00 ---
+.text
+	 IP: 557e00995f00 IP+1: 557e00995f04
+		 << nop edx, edi
+	 IP: 557e00995f04 IP+1: 557e00995f0b
+		 << mov rax, qword ptr [rip+0x2d65]
+	 IP: 557e00995f0b IP+1: 557e00995f0f
+		 << cmp rax, 0xffffffffffffffff
+	 IP: 557e00995f0f IP+1: 557e00995f11
+		 << jz 0x557e00995f40
+	|
+	|
+	false: jz 0x557e00995f40
+	|
+	v
+--- BBL Head Address: 557e00995f11 ---
+.text
+	 IP: 557e00995f11 IP+1: 557e00995f12
+		 << push rbp
+	 IP: 557e00995f12 IP+1: 557e00995f15
+		 << mov rbp, rsp
+	 IP: 557e00995f15 IP+1: 557e00995f16
+		 << push rbx
+	 IP: 557e00995f16 IP+1: 557e00995f1d
+		 << lea rbx, ptr [rip+0x2d53]
+	 IP: 557e00995f1d IP+1: 557e00995f21
+		 << sub rsp, 0x8
+	 IP: 557e00995f21 IP+1: 557e00995f28
+		 << nop dword ptr [rax], eax
+	 IP: 557e00995f28 IP+1: 557e00995f2a
+		 << call rax
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e00995f40 ---
+.text
+	 IP: 557e00995f40 IP+1: 557e00995f41
+		 << ret 
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e00990020 ---
+_init
+	 IP: 557e00990020 IP+1: 557e00990024
+		 << add rsp, 0x8
+	 IP: 557e00990024 IP+1: 557e00990025
+		 << ret 
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e009905f0 ---
+.text
+	 IP: 557e009905f0 IP+1: 557e009905f4
+		 << nop edx, edi
+	 IP: 557e009905f4 IP+1: 557e009905f6
+		 << push r14
+	 IP: 557e009905f6 IP+1: 557e009905f8
+		 << push r13
+	 IP: 557e009905f8 IP+1: 557e009905fa
+		 << push r12
+	 IP: 557e009905fa IP+1: 557e009905fb
+		 << push rbp
+	 IP: 557e009905fb IP+1: 557e009905fc
+		 << push rbx
+	 IP: 557e009905fc IP+1: 557e009905ff
+		 << mov r13, qword ptr [rsi]
+	 IP: 557e009905ff IP+1: 557e00990602
+		 << test r13, r13
+	 IP: 557e00990602 IP+1: 557e00990608
+		 << jz 0x557e00990717
+	|
+	|
+	false: jz 0x557e00990717
+	|
+	v
+--- BBL Head Address: 557e00990608 ---
+.text
+	 IP: 557e00990608 IP+1: 557e0099060a
+		 << mov ebx, edi
+	 IP: 557e0099060a IP+1: 557e0099060d
+		 << mov r12, rsi
+	 IP: 557e0099060d IP+1: 557e00990610
+		 << mov rdi, r13
+	 IP: 557e00990610 IP+1: 557e00990615
+		 << mov esi, 0x2f
+	 IP: 557e00990615 IP+1: 557e0099061a
+		 << call 0x557e00990410
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e00990410 ---
+.plt.sec
+	 IP: 557e00990410 IP+1: 557e00990414
+		 << nop edx, edi
+	 IP: 557e00990414 IP+1: 557e0099041b
+		 << bnd jmp qword ptr [rip+0x8abd]
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e0099061a ---
+.text
+	 IP: 557e0099061a IP+1: 557e0099061d
+		 << mov rbp, rax
+	 IP: 557e0099061d IP+1: 557e00990620
+		 << test rax, rax
+	 IP: 557e00990620 IP+1: 557e00990622
+		 << jz 0x557e00990670
+	|
+	|
+	false: jz 0x557e00990670
+	|
+	v
+--- BBL Head Address: 557e00990622 ---
+.text
+	 IP: 557e00990622 IP+1: 557e00990626
+		 << lea r14, ptr [rax+0x1]
+	 IP: 557e00990626 IP+1: 557e00990629
+		 << mov rax, r14
+	 IP: 557e00990629 IP+1: 557e0099062c
+		 << sub rax, r13
+	 IP: 557e0099062c IP+1: 557e00990630
+		 << cmp rax, 0x6
+	 IP: 557e00990630 IP+1: 557e00990632
+		 << jle 0x557e00990670
+	|
+	|
+	false: jle 0x557e00990670
+	|
+	v
+--- BBL Head Address: 557e00990632 ---
+.text
+	 IP: 557e00990632 IP+1: 557e00990636
+		 << lea rdi, ptr [rbp-0x6]
+	 IP: 557e00990636 IP+1: 557e0099063b
+		 << mov edx, 0x7
+	 IP: 557e0099063b IP+1: 557e00990642
+		 << lea rsi, ptr [rip+0x5b16]
+	 IP: 557e00990642 IP+1: 557e00990647
+		 << call 0x557e00990350
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e00990670 ---
+.text
+	 IP: 557e00990670 IP+1: 557e00990677
+		 << mov rax, qword ptr [rip+0x8961]
+	 IP: 557e00990677 IP+1: 557e0099067e
+		 << lea rsi, ptr [rip+0x59c3]
+	 IP: 557e0099067e IP+1: 557e00990683
+		 << mov edi, 0x6
+	 IP: 557e00990683 IP+1: 557e0099068a
+		 << lea rbp, ptr [rip+0x5aec]
+	 IP: 557e0099068a IP+1: 557e0099068d
+		 << mov qword ptr [rax], r13
+	 IP: 557e0099068d IP+1: 557e00990692
+		 << call 0x557e00990530
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e00990530 ---
+.plt.sec
+	 IP: 557e00990530 IP+1: 557e00990534
+		 << nop edx, edi
+	 IP: 557e00990534 IP+1: 557e0099053b
+		 << bnd jmp qword ptr [rip+0x8a2d]
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e00990692 ---
+.text
+	 IP: 557e00990692 IP+1: 557e00990699
+		 << lea rsi, ptr [rip+0x5acb]
+	 IP: 557e00990699 IP+1: 557e0099069c
+		 << mov rdi, rbp
+	 IP: 557e0099069c IP+1: 557e009906a1
+		 << call 0x557e009903b0
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e009903b0 ---
+.plt.sec
+	 IP: 557e009903b0 IP+1: 557e009903b4
+		 << nop edx, edi
+	 IP: 557e009903b4 IP+1: 557e009903bb
+		 << bnd jmp qword ptr [rip+0x8aed]
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e009906a1 ---
+.text
+	 IP: 557e009906a1 IP+1: 557e009906a4
+		 << mov rdi, rbp
+	 IP: 557e009906a4 IP+1: 557e009906a9
+		 << call 0x557e00990390
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e00990390 ---
+.plt.sec
+	 IP: 557e00990390 IP+1: 557e00990394
+		 << nop edx, edi
+	 IP: 557e00990394 IP+1: 557e0099039b
+		 << bnd jmp qword ptr [rip+0x8afd]
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e009906a9 ---
+.text
+	 IP: 557e009906a9 IP+1: 557e009906b0
+		 << lea rdi, ptr [rip+0x1f60]
+	 IP: 557e009906b0 IP+1: 557e009906ba
+		 << mov dword ptr [rip+0x896a], 0x2
+	 IP: 557e009906ba IP+1: 557e009906bf
+		 << call 0x557e00995ee0
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e00995ee0 ---
+.text
+	 IP: 557e00995ee0 IP+1: 557e00995ee4
+		 << nop edx, edi
+	 IP: 557e00995ee4 IP+1: 557e00995eeb
+		 << mov rdx, qword ptr [rip+0x311d]
+	 IP: 557e00995eeb IP+1: 557e00995eed
+		 << xor esi, esi
+	 IP: 557e00995eed IP+1: 557e00995ef2
+		 << jmp 0x557e00990570
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e00990570 ---
+.plt.sec
+	 IP: 557e00990570 IP+1: 557e00990574
+		 << nop edx, edi
+	 IP: 557e00990574 IP+1: 557e0099057b
+		 << bnd jmp qword ptr [rip+0x8a0d]
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e009906bf ---
+.text
+	 IP: 557e009906bf IP+1: 557e009906c6
+		 << mov qword ptr [rip+0x8b02], r12
+	 IP: 557e009906c6 IP+1: 557e009906cc
+		 << mov dword ptr [rip+0x8af8], ebx
+	 IP: 557e009906cc IP+1: 557e009906d6
+		 << mov dword ptr [rip+0x8aea], 0x1
+	 IP: 557e009906d6 IP+1: 557e009906d9
+		 << cmp ebx, 0x1
+	 IP: 557e009906d9 IP+1: 557e009906db
+		 << jle 0x557e009906fd
+	|
+	|
+	false: jle 0x557e009906fd
+	|
+	v
+--- BBL Head Address: 557e009906db ---
+.text
+	 IP: 557e009906db IP+1: 557e009906de
+		 << lea edi, ptr [rbx-0x1]
+	 IP: 557e009906de IP+1: 557e009906e3
+		 << call 0x557e00995a20
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e009906fd ---
+.text
+	 IP: 557e009906fd IP+1: 557e00990702
+		 << mov eax, 0x1
+	 IP: 557e00990702 IP+1: 557e00990704
+		 << jmp 0x557e009906f4
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e009906f4 ---
+.text
+	 IP: 557e009906f4 IP+1: 557e009906f5
+		 << pop rbx
+	 IP: 557e009906f5 IP+1: 557e009906f6
+		 << pop rbp
+	 IP: 557e009906f6 IP+1: 557e009906f8
+		 << pop r12
+	 IP: 557e009906f8 IP+1: 557e009906fa
+		 << pop r13
+	 IP: 557e009906fa IP+1: 557e009906fc
+		 << pop r14
+	 IP: 557e009906fc IP+1: 557e009906fd
+		 << ret 
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e00992610 ---
+.text
+	 IP: 557e00992610 IP+1: 557e00992614
+		 << nop edx, edi
+	 IP: 557e00992614 IP+1: 557e0099261b
+		 << mov rax, qword ptr [rip+0x69ad]
+	 IP: 557e0099261b IP+1: 557e0099261d
+		 << push r12
+	 IP: 557e0099261d IP+1: 557e00992620
+		 << mov rdi, qword ptr [rax]
+	 IP: 557e00992620 IP+1: 557e00992625
+		 << call 0x557e00990e70
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e00990e70 ---
+.text
+	 IP: 557e00990e70 IP+1: 557e00990e72
+		 << push r14
+	 IP: 557e00990e72 IP+1: 557e00990e74
+		 << push r13
+	 IP: 557e00990e74 IP+1: 557e00990e76
+		 << push r12
+	 IP: 557e00990e76 IP+1: 557e00990e77
+		 << push rbp
+	 IP: 557e00990e77 IP+1: 557e00990e7a
+		 << mov rbp, rdi
+	 IP: 557e00990e7a IP+1: 557e00990e7b
+		 << push rbx
+	 IP: 557e00990e7b IP+1: 557e00990e80
+		 << call 0x557e00990370
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e00990370 ---
+.plt.sec
+	 IP: 557e00990370 IP+1: 557e00990374
+		 << nop edx, edi
+	 IP: 557e00990374 IP+1: 557e0099037b
+		 << bnd jmp qword ptr [rip+0x8b0d]
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e00990e80 ---
+.text
+	 IP: 557e00990e80 IP+1: 557e00990e83
+		 << mov ebx, dword ptr [rbp]
+	 IP: 557e00990e83 IP+1: 557e00990e86
+		 << mov rdi, rbp
+	 IP: 557e00990e86 IP+1: 557e00990e89
+		 << mov r12, rax
+	 IP: 557e00990e89 IP+1: 557e00990e8e
+		 << call 0x557e009904c0
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e009904c0 ---
+.plt.sec
+	 IP: 557e009904c0 IP+1: 557e009904c4
+		 << nop edx, edi
+	 IP: 557e009904c4 IP+1: 557e009904cb
+		 << bnd jmp qword ptr [rip+0x8a65]
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e00990e8e ---
+.text
+	 IP: 557e00990e8e IP+1: 557e00990e91
+		 << and ebx, 0x20
+	 IP: 557e00990e91 IP+1: 557e00990e94
+		 << mov rdi, rbp
+	 IP: 557e00990e94 IP+1: 557e00990e96
+		 << test eax, eax
+	 IP: 557e00990e96 IP+1: 557e00990e98
+		 << js 0x557e00990f0f
+	|
+	|
+	false: js 0x557e00990f0f
+	|
+	v
+--- BBL Head Address: 557e00990e98 ---
+.text
+	 IP: 557e00990e98 IP+1: 557e00990e9d
+		 << call 0x557e00990510
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e00990510 ---
+.plt.sec
+	 IP: 557e00990510 IP+1: 557e00990514
+		 << nop edx, edi
+	 IP: 557e00990514 IP+1: 557e0099051b
+		 << bnd jmp qword ptr [rip+0x8a3d]
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e00990e9d ---
+.text
+	 IP: 557e00990e9d IP+1: 557e00990e9f
+		 << test eax, eax
+	 IP: 557e00990e9f IP+1: 557e00990ea1
+		 << jnz 0x557e00990ef0
+	|
+	|
+	false: jnz 0x557e00990ef0
+	|
+	v
+--- BBL Head Address: 557e00990ea1 ---
+.text
+	 IP: 557e00990ea1 IP+1: 557e00990ea4
+		 << mov rdi, rbp
+	 IP: 557e00990ea4 IP+1: 557e00990ea9
+		 << call 0x557e00990510
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e00990ea9 ---
+.text
+	 IP: 557e00990ea9 IP+1: 557e00990eab
+		 << test eax, eax
+	 IP: 557e00990eab IP+1: 557e00990eb1
+		 << jnz 0x557e00990f40
+	|
+	|
+	false: jnz 0x557e00990f40
+	|
+	v
+--- BBL Head Address: 557e00990eb1 ---
+.text
+	 IP: 557e00990eb1 IP+1: 557e00990eb4
+		 << mov rdi, rbp
+	 IP: 557e00990eb4 IP+1: 557e00990eb9
+		 << call 0x557e009904e0
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e009904e0 ---
+.plt.sec
+	 IP: 557e009904e0 IP+1: 557e009904e4
+		 << nop edx, edi
+	 IP: 557e009904e4 IP+1: 557e009904eb
+		 << bnd jmp qword ptr [rip+0x8a55]
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e00990eb9 ---
+.text
+	 IP: 557e00990eb9 IP+1: 557e00990ebb
+		 << test eax, eax
+	 IP: 557e00990ebb IP+1: 557e00990ebd
+		 << jz 0x557e00990f0c
+	|
+	|
+	false: jz 0x557e00990f0c
+	|
+	v
+--- BBL Head Address: 557e00990ebd ---
+.text
+	 IP: 557e00990ebd IP+1: 557e00990ec2
+		 << call 0x557e00990340
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e00990f0c ---
+.text
+	 IP: 557e00990f0c IP+1: 557e00990f0f
+		 << mov rdi, rbp
+	 IP: 557e00990f0f IP+1: 557e00990f14
+		 << call 0x557e009903a0
+	|
+	|
+	true: 
+	|
+	v
+--- BBL Head Address: 557e009903a0 ---
+.plt.sec
+	 IP: 557e009903a0 IP+1: 557e009903a4
+		 << nop edx, edi
+	 IP: 557e009903a4 IP+1: 557e009903ab
+		 << bnd jmp qword ptr [rip+0x8af5]

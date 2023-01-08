@@ -30,18 +30,18 @@ VOID traceMain(TRACE trace, VOID* v){
 	for( BBL bbl = TRACE_BblHead(trace); BBL_Valid(bbl); bbl = BBL_Next(bbl) ){
 		
 		
-		cout << " |" << endl;
-		cout << " |" << endl;
+		cout << "\t|" << endl;
+		cout << "\t|" << endl;
 
 		if(bblhead == nextInstructionAddress){
-			cout << "true: " << cfIns << endl;
+			cout << "\ttrue: " << cfIns << endl;
 
 		}else{
-			cout << "false: " << cfIns << endl; 
+			cout << "\tfalse: " << cfIns << endl; 
 		}
 
-		cout << " |" << endl;
-		cout << " v" << endl;
+		cout << "\t|" << endl;
+		cout << "\tv" << endl;
 
 		bblhead = BBL_Address(bbl);
 		cout << "--- BBL Head Address: " << hex << bblhead << " ---" << endl;
@@ -74,6 +74,10 @@ VOID mainIMG(IMG img, VOID* v){
 	}
 }
 
+VOID EntryPoint(VOID *){
+	cout << "-- Program Start --" << endl;
+}
+
 INT32 Usage(){
 	cerr << "wrong" << endl;
 	return -1;
@@ -104,6 +108,8 @@ int main(int argc, char* argv[]){
 
 	OutFile.open("data.out");
 
+
+	PIN_AddApplicationStartFunction(EntryPoint, NULL);
 	IMG_AddInstrumentFunction(mainIMG, NULL);
 	PIN_AddFiniFunction(Fini, NULL);
 
